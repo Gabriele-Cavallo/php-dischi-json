@@ -91,6 +91,15 @@ img{
     width: auto;
     margin: 0 auto;
 }
+img.logo{
+    height: 100px;
+}
+.col.single-disc{
+    transform: scale(2);
+}
+.single-disc.col{
+    margin: 0 auto;
+}
 /* #endregion Main */
 
 /* #region General Utilities */

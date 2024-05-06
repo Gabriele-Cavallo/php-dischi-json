@@ -14,18 +14,22 @@
     <div id="app">
         <header>
             <div class="header-wrapper d-flex algn-cntr jst-cntr anchor">
-                <img class="logo" src="" alt="logo">
+                <img class="logo" src="./img/logo.png" alt="logo">
                 <h1>COLLEZIONE DISCHI</h1> 
             </div>
         </header>
-        <main>
+        <main class="anchor d-flex jst-cntr algn-cntr">
             <section class="container">
-                <div class="row flex-wrap d-flex jst-btwn">
-                    <div v-for="disc, index in discs" class="col d-flex flex-col gap-10">
-                        <img :src="disc.poster" alt="copertina disco">
-                        <h2>{{ disc.title }}</h2>
-                        <h4>{{ disc.author }}</h4>
-                        <h3>{{ disc.year }}</h3>
+                <div class="row flex-wrap d-flex jst-btwn ">
+                    <div
+                        @click="getSingleDiscsFromApi(index)" 
+                        v-for="disc, index in discs" 
+                        class="col d-flex flex-col gap-10"
+                        :class="singleDisc ? 'single-disc' : '' ">
+                            <img :src="disc.poster" alt="copertina disco">
+                            <h2>{{ disc.title }}</h2>
+                            <h4>{{ disc.author }}</h4>
+                            <h3>{{ disc.year }}</h3>
                     </div>
                 </div>
             </section>
