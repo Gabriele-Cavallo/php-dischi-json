@@ -12,7 +12,24 @@
 <body>
     <!-- Vue-JS HTML Container -->
     <div id="app">
-        
+        <header>
+            <div class="header-wrapper d-flex algn-cntr jst-cntr anchor">
+                <img class="logo" src="" alt="logo">
+                <h1>COLLEZIONE DISCHI</h1> 
+            </div>
+        </header>
+        <main>
+            <section class="container">
+                <div class="rowd-wrap jst-btwn">
+                    <div class="col d-flex flex-col gap-10">
+                        <img src="" alt="copertina disco">
+                        <h2>[Titolo]</h2>
+                        <h4>[Artista]</h4>
+                        <h3>[Anno]</h3>
+                    </div>
+                </div>
+            </section>
+        </main>
     </div>
     <!-- /Vue-JS HTML Container -->
     <!-- Vue-JS Script -->
