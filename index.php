@@ -20,12 +20,12 @@
         </header>
         <main>
             <section class="container">
-                <div class="rowd-wrap jst-btwn">
-                    <div class="col d-flex flex-col gap-10">
-                        <img src="" alt="copertina disco">
-                        <h2>[Titolo]</h2>
-                        <h4>[Artista]</h4>
-                        <h3>[Anno]</h3>
+                <div class="row flex-wrap d-flex jst-btwn">
+                    <div v-for="disc, index in discs" class="col d-flex flex-col gap-10">
+                        <img :src="disc.poster" alt="copertina disco">
+                        <h2>{{ disc.title }}</h2>
+                        <h4>{{ disc.author }}</h4>
+                        <h3>{{ disc.year }}</h3>
                     </div>
                 </div>
             </section>

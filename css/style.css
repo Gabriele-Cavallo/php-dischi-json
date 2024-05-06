@@ -71,18 +71,25 @@ header{
 /* #region Main */
 main{
     min-height: calc(100vh - 80px);
+    background-color: #1d2d3c;
 }
 .container{
-    background-color: #1d2d3c;
     padding: 20px;
 }
 .col{
     width: 30%;
-    min-height: 400px;
-    max-height: 400px;
+    min-height: 500px;
+    max-height: 500px;
     background-color: #06131f;
     color: white;
     text-align: center;
+    padding-top: 30px;
+    margin: 20px;
+}
+img{
+    max-height: 260px;
+    width: auto;
+    margin: 0 auto;
 }
 /* #endregion Main */
 
