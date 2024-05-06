@@ -11,7 +11,6 @@ createApp({
             axios.get('server.php')
             .then((response) => {
                 this.discs = response.data;
-                console.log('response' , response.data);
             });
         },
     },
